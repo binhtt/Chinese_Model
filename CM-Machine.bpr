@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv5/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="inv4/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,readObject,writeObject,deleteObject))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="exitsting_object⊆DataObject">
+            <org.eventb.core.prIdent name="DataObject" org.eventb.core.type="ℙ(DataObject)"/>
+            <org.eventb.core.prIdent name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="writeObject∩deleteObject=(∅ ⦂ ℙ(Operation))">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="deleteObject" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="writeObject" org.eventb.core.type="ℙ(Operation)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Operation,readObject,writeObject,deleteObject)">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="deleteObject" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="readObject" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="writeObject" org.eventb.core.type="ℙ(Operation)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="readObject∩writeObject=(∅ ⦂ ℙ(Operation))">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="readObject" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="writeObject" org.eventb.core.type="ℙ(Operation)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="readObject∩deleteObject=(∅ ⦂ ℙ(Operation))">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="deleteObject" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="readObject" org.eventb.core.type="ℙ(Operation)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="current_user∈Individuals">
+            <org.eventb.core.prIdent name="Individuals" org.eventb.core.type="ℙ(Individuals)"/>
+            <org.eventb.core.prIdent name="current_user" org.eventb.core.type="Individuals"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Operation=readObject∪writeObject∪deleteObject">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="deleteObject" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="readObject" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="writeObject" org.eventb.core.type="ℙ(Operation)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="readObject/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="DataObject">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p1,p2">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p10" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.prIdent name="obj" org.eventb.core.type="DataObject"/>
+        <org.eventb.core.prIdent name="read_object" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="read_object∪{obj}⊆exitsting_object"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="read_object⊆exitsting_object∧obj∈exitsting_object"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="read_object⊆exitsting_object"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="obj∈exitsting_object"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="readObject/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="DataObject,Individuals,Operation">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p1,p2">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p10" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        <org.eventb.core.prIdent name="access" org.eventb.core.type="ℙ(Individuals×(Operation×DataObject))"/>
+        <org.eventb.core.prIdent name="current_user" org.eventb.core.type="Individuals"/>
+        <org.eventb.core.prIdent name="obj" org.eventb.core.type="DataObject"/>
+        <org.eventb.core.prIdent name="read_object" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="read_object⊆{f⦂DataObject·Read ↦ f∈access[{current_user}] ∣ f}"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Read ↦ obj∈access[{current_user}]"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="read_object∪{obj}⊆{f⦂DataObject·Read ↦ f∈access[{current_user}] ∣ f}"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="read_object⊆{f⦂DataObject·Read ↦ f∈access[{current_user}] ∣ f}∧Read ↦ obj∈access[{current_user}]"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="writeObject/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="DataObject">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p1,p2">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p10" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.prIdent name="obj" org.eventb.core.type="DataObject"/>
+        <org.eventb.core.prIdent name="open_object" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="open_object∪{obj}⊆exitsting_object"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="open_object⊆exitsting_object"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="obj∈exitsting_object"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="open_object⊆exitsting_object∧obj∈exitsting_object"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="writeObject/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="DataObject,Individuals,Operation">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p1">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p11"/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        <org.eventb.core.prIdent name="access" org.eventb.core.type="ℙ(Individuals×(Operation×DataObject))"/>
+        <org.eventb.core.prIdent name="current_user" org.eventb.core.type="Individuals"/>
+        <org.eventb.core.prIdent name="obj" org.eventb.core.type="DataObject"/>
+        <org.eventb.core.prIdent name="open_object" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Read ↦ obj∈access[{current_user}]"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="exitsting_object⊆DataObject">
+            <org.eventb.core.prIdent name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="open_object⊆{f⦂DataObject·Read ↦ f∈access[{current_user}] ∣ f}∧Read ↦ obj∈access[{current_user}]"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="open_object⊆{f⦂DataObject·Read ↦ f∈access[{current_user}] ∣ f}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="current_user∈Individuals"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="open_object∪{obj}⊆{f⦂DataObject·Read ↦ f∈access[{current_user}] ∣ f}"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤∧Read ↦ obj∈access[{current_user}]"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="deleteObject/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="exitsting_object⊆DataObject">
+            <org.eventb.core.prIdent name="DataObject" org.eventb.core.type="ℙ(DataObject)"/>
+            <org.eventb.core.prIdent name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="current_user∈Individuals">
+            <org.eventb.core.prIdent name="Individuals" org.eventb.core.type="ℙ(Individuals)"/>
+            <org.eventb.core.prIdent name="current_user" org.eventb.core.type="Individuals"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="deleteObject/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="exitsting_object⊆DataObject">
+            <org.eventb.core.prIdent name="DataObject" org.eventb.core.type="ℙ(DataObject)"/>
+            <org.eventb.core.prIdent name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="current_user∈Individuals">
+            <org.eventb.core.prIdent name="Individuals" org.eventb.core.type="ℙ(Individuals)"/>
+            <org.eventb.core.prIdent name="current_user" org.eventb.core.type="Individuals"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="deleteObject/inv5/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="exitsting_object⊆DataObject">
+            <org.eventb.core.prIdent name="DataObject" org.eventb.core.type="ℙ(DataObject)"/>
+            <org.eventb.core.prIdent name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="current_user∈Individuals">
+            <org.eventb.core.prIdent name="Individuals" org.eventb.core.type="ℙ(Individuals)"/>
+            <org.eventb.core.prIdent name="current_user" org.eventb.core.type="Individuals"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="deleteObject/act2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="Companies,DataObject">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="p1">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="p2"/>
+                                    </org.eventb.core.prAnte>
+                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                    <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p12">
+                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p1"/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.prIdent name="obj" org.eventb.core.type="DataObject"/>
+        <org.eventb.core.prIdent name="owner" org.eventb.core.type="ℙ(DataObject×Companies)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="exitsting_object⊆DataObject"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="owner∈exitsting_object → Companies"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="current_user∈Individuals">
+            <org.eventb.core.prIdent name="Individuals" org.eventb.core.type="ℙ(Individuals)"/>
+            <org.eventb.core.prIdent name="current_user" org.eventb.core.type="Individuals"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="group⊆COI">
+            <org.eventb.core.prIdent name="COI" org.eventb.core.type="ℙ(COI)"/>
+            <org.eventb.core.prIdent name="group" org.eventb.core.type="ℙ(COI)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="obj∈exitsting_object"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="owner∈DataObject ⇸ Companies"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="obj∈dom(owner)∧owner∈DataObject ⇸ Companies"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="obj∈dom(owner)"/>
+        <org.eventb.core.prExpr name="e0" org.eventb.core.expression="exitsting_object"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="deleteObject/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="exitsting_object⊆DataObject">
+            <org.eventb.core.prIdent name="DataObject" org.eventb.core.type="ℙ(DataObject)"/>
+            <org.eventb.core.prIdent name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="current_user∈Individuals">
+            <org.eventb.core.prIdent name="Individuals" org.eventb.core.type="ℙ(Individuals)"/>
+            <org.eventb.core.prIdent name="current_user" org.eventb.core.type="Individuals"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="deleteObject/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="exitsting_object⊆DataObject">
+            <org.eventb.core.prIdent name="DataObject" org.eventb.core.type="ℙ(DataObject)"/>
+            <org.eventb.core.prIdent name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="current_user∈Individuals">
+            <org.eventb.core.prIdent name="Individuals" org.eventb.core.type="ℙ(Individuals)"/>
+            <org.eventb.core.prIdent name="current_user" org.eventb.core.type="Individuals"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="inv8/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="exitsting_object⊆DataObject">
+            <org.eventb.core.prIdent name="DataObject" org.eventb.core.type="ℙ(DataObject)"/>
+            <org.eventb.core.prIdent name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="current_user∈Individuals">
+            <org.eventb.core.prIdent name="Individuals" org.eventb.core.type="ℙ(Individuals)"/>
+            <org.eventb.core.prIdent name="current_user" org.eventb.core.type="Individuals"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="writeObject/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="DataObject">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p1,p2">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p10" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.prIdent name="obj" org.eventb.core.type="DataObject"/>
+        <org.eventb.core.prIdent name="write_object" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="write_object⊆exitsting_object"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="write_object⊆exitsting_object∧obj∈exitsting_object"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="obj∈exitsting_object"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="write_object∪{obj}⊆exitsting_object"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="deleteObject/inv9/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="exitsting_object⊆DataObject">
+            <org.eventb.core.prIdent name="DataObject" org.eventb.core.type="ℙ(DataObject)"/>
+            <org.eventb.core.prIdent name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="current_user∈Individuals">
+            <org.eventb.core.prIdent name="Individuals" org.eventb.core.type="ℙ(Individuals)"/>
+            <org.eventb.core.prIdent name="current_user" org.eventb.core.type="Individuals"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="deleteObject/inv10/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="exitsting_object⊆DataObject">
+            <org.eventb.core.prIdent name="DataObject" org.eventb.core.type="ℙ(DataObject)"/>
+            <org.eventb.core.prIdent name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="current_user∈Individuals">
+            <org.eventb.core.prIdent name="Individuals" org.eventb.core.type="ℙ(Individuals)"/>
+            <org.eventb.core.prIdent name="current_user" org.eventb.core.type="Individuals"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="DataObject">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(DataObject))⊆(∅ ⦂ ℙ(DataObject))"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="DataObject,Individuals,Operation">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        <org.eventb.core.prIdent name="current_user'" org.eventb.core.type="Individuals"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(DataObject))⊆{f⦂DataObject·Read ↦ f∈(Individuals × (∅ ⦂ ℙ(Operation×DataObject)))[{current_user'}] ∣ f}"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Companies,DataObject">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(DataObject×Companies))∈(∅ ⦂ ℙ(DataObject)) → Companies"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="DataObject,Individuals,Operation">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Individuals × (∅ ⦂ ℙ(Operation×DataObject))∈Individuals ↔ Operation × (∅ ⦂ ℙ(DataObject))"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="DataObject">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(DataObject))⊆(∅ ⦂ ℙ(DataObject))"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITALISATION/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="DataObject">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(DataObject))⊆(∅ ⦂ ℙ(DataObject))"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITALISATION/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="DataObject,Individuals,Operation">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+        <org.eventb.core.prIdent name="current_user'" org.eventb.core.type="Individuals"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(DataObject))⊆{f⦂DataObject·Delete ↦ f∈(Individuals × (∅ ⦂ ℙ(Operation×DataObject)))[{current_user'}] ∣ f}"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITALISATION/act7/FIS" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Individuals">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Operation,{Read},{Write},{Delete}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p10" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬⊥"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Individuals≠(∅ ⦂ ℙ(Individuals))"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="exitsting_object⊆DataObject">
+            <org.eventb.core.prIdent name="DataObject" org.eventb.core.type="ℙ(DataObject)"/>
+            <org.eventb.core.prIdent name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Read=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Write=Delete">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Individuals=(∅ ⦂ ℙ(Individuals))"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Operation={Read,Write,Delete}">
+            <org.eventb.core.prIdent name="Delete" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="current_user∈Individuals">
+            <org.eventb.core.prIdent name="current_user" org.eventb.core.type="Individuals"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Read=Write">
+            <org.eventb.core.prIdent name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+            <org.eventb.core.prIdent name="Read" org.eventb.core.type="Operation"/>
+            <org.eventb.core.prIdent name="Write" org.eventb.core.type="Operation"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

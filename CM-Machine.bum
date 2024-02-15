@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="CM-Context"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="exitsting_object"/>
+    <org.eventb.core.invariant name="+" org.eventb.core.label="inv1" org.eventb.core.predicate="exitsting_object⊆DataObject"/>
+    <org.eventb.core.variable name="," org.eventb.core.identifier="owner"/>
+    <org.eventb.core.invariant name="-" org.eventb.core.label="inv2" org.eventb.core.predicate="owner∈exitsting_object→Companies"/>
+    <org.eventb.core.variable name="." org.eventb.core.identifier="current_user"/>
+    <org.eventb.core.invariant name="/" org.eventb.core.label="inv3" org.eventb.core.predicate="current_user∈Individuals"/>
+    <org.eventb.core.variable name="0" org.eventb.core.identifier="access"/>
+    <org.eventb.core.invariant name="1" org.eventb.core.label="inv4" org.eventb.core.predicate="access∈Individuals↔(Operation×exitsting_object)"/>
+    <org.eventb.core.variable name="2" org.eventb.core.identifier="read_object"/>
+    <org.eventb.core.invariant name="3" org.eventb.core.label="inv5" org.eventb.core.predicate="read_object⊆exitsting_object"/>
+    <org.eventb.core.invariant name="4" org.eventb.core.label="inv6" org.eventb.core.predicate="read_object⊆{f·Read↦f∈(access[{current_user}])∣f}"/>
+    <org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITALISATION">
+        <org.eventb.core.action name="*" org.eventb.core.assignment="exitsting_object≔∅" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="owner≔∅" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="access≔Individuals×∅" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="read_object≔∅" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="write_object≔∅" org.eventb.core.label="act5"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="delete_object≔∅" org.eventb.core.label="act6"/>
+        <org.eventb.core.action name="0" org.eventb.core.assignment="current_user:∈Individuals" org.eventb.core.label="act7"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="A" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="readObject">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="obj"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="obj∈exitsting_object"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="Read↦obj∈access[{current_user}]"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="read_object≔read_object∪{obj}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="writeObject">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="obj"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="obj∈exitsting_object"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="Write↦obj∈access[{current_user}]"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="write_object≔write_object∪{obj}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="9" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="deleteObject">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="obj"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="obj∈exitsting_object"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="Delete↦obj∈access[{current_user}]"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="exitsting_object≔exitsting_object∖{obj}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="owner≔owner∖{obj↦owner(obj)}" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="delete_object≔delete_object∖{obj}" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="access≔access⩥(Operation×{obj})" org.eventb.core.label="act4"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name=":" org.eventb.core.identifier="write_object"/>
+    <org.eventb.core.invariant name=";" org.eventb.core.label="inv7" org.eventb.core.predicate="write_object⊆exitsting_object"/>
+    <org.eventb.core.invariant name="=" org.eventb.core.label="inv8" org.eventb.core.predicate="write_object⊆{f·Write↦f∈(access[{current_user}])∣f}" org.eventb.core.theorem="true"/>
+    <org.eventb.core.variable name="&gt;" org.eventb.core.identifier="delete_object"/>
+    <org.eventb.core.invariant name="?" org.eventb.core.label="inv9" org.eventb.core.predicate="delete_object⊆exitsting_object"/>
+    <org.eventb.core.invariant name="@" org.eventb.core.label="inv10" org.eventb.core.predicate="delete_object⊆{f·Delete↦f∈(access[{current_user}])∣f}"/>
+</org.eventb.core.machineFile>

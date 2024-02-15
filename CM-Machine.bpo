@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="11">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="DataObject" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.poIdentifier name="Companies" org.eventb.core.type="ℙ(Companies)"/>
+        <org.eventb.core.poIdentifier name="Individuals" org.eventb.core.type="ℙ(Individuals)"/>
+        <org.eventb.core.poIdentifier name="COI" org.eventb.core.type="ℙ(COI)"/>
+        <org.eventb.core.poIdentifier name="PERMISSION" org.eventb.core.type="ℙ(PERMISSION)"/>
+        <org.eventb.core.poIdentifier name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+        <org.eventb.core.poIdentifier name="Delete" org.eventb.core.type="Operation"/>
+        <org.eventb.core.poIdentifier name="Write" org.eventb.core.type="Operation"/>
+        <org.eventb.core.poIdentifier name="Read" org.eventb.core.type="Operation"/>
+        <org.eventb.core.poPredicate name="Individualt" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})" org.eventb.core.source="/Chinese_Model/CM-Context.buc|org.eventb.core.contextFile#CM-Context|org.eventb.core.axiom#5"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="delete_object" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.poIdentifier name="exitsting_object" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.poIdentifier name="owner" org.eventb.core.type="ℙ(DataObject×Companies)"/>
+        <org.eventb.core.poIdentifier name="write_object" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.poIdentifier name="current_user" org.eventb.core.type="Individuals"/>
+        <org.eventb.core.poIdentifier name="access" org.eventb.core.type="ℙ(Individuals×(Operation×DataObject))"/>
+        <org.eventb.core.poIdentifier name="read_object" org.eventb.core.type="ℙ(DataObject)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="inv8/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="write_object⊆{f⦂DataObject·Write ↦ f∈access[{current_user}] ∣ f}" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#="/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#="/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="11">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(DataObject×Companies))∈(∅ ⦂ ℙ(DataObject)) → Companies" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#7"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#INITALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="11">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Individuals × (∅ ⦂ ℙ(Operation×DataObject))∈Individuals ↔ Operation × (∅ ⦂ ℙ(DataObject))" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#7"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#INITALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="11">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(DataObject))⊆(∅ ⦂ ℙ(DataObject))" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#7"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#INITALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="11">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecu">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="current_user'∈Individuals" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#7|org.eventb.core.action#0"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(DataObject))⊆{f⦂DataObject·Read ↦ f∈(Individuals × (∅ ⦂ ℙ(Operation×DataObject)))[{current_user'}] ∣ f}" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#7"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#INITALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="11">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(DataObject))⊆(∅ ⦂ ℙ(DataObject))" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#7"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#INITALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITALISATION/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="11">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(DataObject))⊆(∅ ⦂ ℙ(DataObject))" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#?"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#7"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#?"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#INITALISATION\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITALISATION/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="11">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecu">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="current_user'∈Individuals" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#7|org.eventb.core.action#0"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(DataObject))⊆{f⦂DataObject·Delete ↦ f∈(Individuals × (∅ ⦂ ℙ(Operation×DataObject)))[{current_user'}] ∣ f}" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#@"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#7"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#@"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#INITALISATION\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD9"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITALISATION/act7/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="11">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Individuals≠(∅ ⦂ ℙ(Individuals))" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#7|org.eventb.core.action#0"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#7|org.eventb.core.action#0"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecu"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTexitsting_objecu" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="11">
+        <org.eventb.core.poIdentifier name="read_object'" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.poIdentifier name="owner'" org.eventb.core.type="ℙ(DataObject×Companies)"/>
+        <org.eventb.core.poIdentifier name="access'" org.eventb.core.type="ℙ(Individuals×(Operation×DataObject))"/>
+        <org.eventb.core.poIdentifier name="exitsting_object'" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.poIdentifier name="write_object'" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.poIdentifier name="delete_object'" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.poIdentifier name="current_user'" org.eventb.core.type="Individuals"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPexitsting_objecu" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTIDENTexitsting_objecu" org.eventb.core.poStamp="11"/>
+    <org.eventb.core.poSequent name="readObject/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecv"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="read_object∪{obj}⊆exitsting_object" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#A"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#readObject\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="readObject/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecv"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="read_object∪{obj}⊆{f⦂DataObject·Read ↦ f∈access[{current_user}] ∣ f}" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#A"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#readObject\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTexitsting_objecv" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
+        <org.eventb.core.poIdentifier name="read_object'" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.poIdentifier name="obj" org.eventb.core.type="DataObject"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPexitsting_objecv" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTIDENTexitsting_objecv" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="obj∈exitsting_object" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#A|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Read ↦ obj∈access[{current_user}]" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#A|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="writeObject/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecw"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="write_object∪{obj}⊆exitsting_object" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#writeObject\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTexitsting_objecw" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
+        <org.eventb.core.poIdentifier name="write_object'" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.poIdentifier name="obj" org.eventb.core.type="DataObject"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPexitsting_objecw" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTIDENTexitsting_objecw" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="obj∈exitsting_object" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#8|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Write ↦ obj∈access[{current_user}]" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#8|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="deleteObject/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecx"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="owner ∖ {obj ↦ owner(obj)}∈exitsting_object ∖ {obj} → Companies" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#9"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#deleteObject\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="deleteObject/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecx"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="access ⩥ (Operation × {obj})∈Individuals ↔ Operation × (exitsting_object ∖ {obj})" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#9"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#deleteObject\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="deleteObject/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecx"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="read_object⊆exitsting_object ∖ {obj}" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#9"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#deleteObject\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="deleteObject/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecx"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="read_object⊆{f⦂DataObject·Read ↦ f∈(access ⩥ (Operation × {obj}))[{current_user}] ∣ f}" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#9"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#deleteObject\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="deleteObject/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecx"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="write_object⊆exitsting_object ∖ {obj}" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#9"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#deleteObject\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="deleteObject/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecx"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="delete_object ∖ {obj}⊆exitsting_object ∖ {obj}" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#?"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#9"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#?"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#deleteObject\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="deleteObject/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecx"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="delete_object ∖ {obj}⊆{f⦂DataObject·Delete ↦ f∈(access ⩥ (Operation × {obj}))[{current_user}] ∣ f}" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#@"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#9"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#@"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poSequent#deleteObject\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD9"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="deleteObject/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecx"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="obj∈dom(owner)∧owner∈DataObject ⇸ Companies" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#9|org.eventb.core.action#+"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#9|org.eventb.core.action#+"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTALLHYPexitsting_objecx"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTexitsting_objecx" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="owner'" org.eventb.core.type="ℙ(DataObject×Companies)"/>
+        <org.eventb.core.poIdentifier name="access'" org.eventb.core.type="ℙ(Individuals×(Operation×DataObject))"/>
+        <org.eventb.core.poIdentifier name="exitsting_object'" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.poIdentifier name="delete_object'" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.poIdentifier name="obj" org.eventb.core.type="DataObject"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPexitsting_objecx" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#EVTIDENTexitsting_objecx" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="obj∈exitsting_object" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#9|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Delete ↦ obj∈access[{current_user}]" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.event#9|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="HYPCM-Contex{" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="exitsting_object⊆DataObject" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="owner∈exitsting_object → Companies" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="current_user∈Individuals" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="access∈Individuals ↔ Operation × exitsting_object" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="read_object⊆exitsting_object" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="read_object⊆{f⦂DataObject·Read ↦ f∈access[{current_user}] ∣ f}" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="write_object⊆exitsting_object" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#;"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Machine.bpo|org.eventb.core.poFile#CM-Machine|org.eventb.core.poPredicateSet#HYPCM-Contex{" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="write_object⊆{f⦂DataObject·Write ↦ f∈access[{current_user}] ∣ f}" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#="/>
+        <org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="delete_object⊆exitsting_object" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#?"/>
+        <org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="delete_object⊆{f⦂DataObject·Delete ↦ f∈access[{current_user}] ∣ f}" org.eventb.core.source="/Chinese_Model/CM-Machine.bum|org.eventb.core.machineFile#CM-Machine|org.eventb.core.invariant#@"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="DataObject" org.eventb.core.type="ℙ(DataObject)"/>
+        <org.eventb.core.poIdentifier name="Companies" org.eventb.core.type="ℙ(Companies)"/>
+        <org.eventb.core.poIdentifier name="Individuals" org.eventb.core.type="ℙ(Individuals)"/>
+        <org.eventb.core.poIdentifier name="COI" org.eventb.core.type="ℙ(COI)"/>
+        <org.eventb.core.poIdentifier name="PERMISSION" org.eventb.core.type="ℙ(PERMISSION)"/>
+        <org.eventb.core.poIdentifier name="Operation" org.eventb.core.type="ℙ(Operation)"/>
+        <org.eventb.core.poIdentifier name="Delete" org.eventb.core.type="Operation"/>
+        <org.eventb.core.poIdentifier name="Write" org.eventb.core.type="Operation"/>
+        <org.eventb.core.poIdentifier name="Read" org.eventb.core.type="Operation"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Chinese_Model/CM-Context.bpo|org.eventb.core.poFile#CM-Context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(Operation,{Read},{Write},{Delete})" org.eventb.core.source="/Chinese_Model/CM-Context.buc|org.eventb.core.contextFile#CM-Context|org.eventb.core.axiom#5"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
