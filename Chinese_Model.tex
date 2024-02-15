@@ -1,0 +1,88 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage{bsymb,b2latex}
+\begin{document}
+\MultiTitle{Chinese\_Model}
+\MultiHeader{CONTEXT}{CM-Context}
+\CONTEXT{CM-Context}{}{}
+\SETS{
+	\Set{Individuals}{}
+	\Set{Companies}{}
+	\Set{DataObject}{}
+	\Set{COI}{}
+	\Set{Operation}{}
+}
+\CONSTANTS{
+	\Constant{Read}{}
+	\Constant{Write}{}
+	\Constant{Delete}{}
+}
+\AXIOMS{
+	\Axiom{axm1}{false}{$partition(Operation, \{Read\},\{Write\},\{Delete\})$}{}
+}
+\END
+\MultiHeader{MACHINE}{CM-Machine}
+\MACHINE{CM-Machine}{}{CM-Context}{}
+\VARIABLES{
+	\Variable{exitsting\_object}{}
+	\Variable{owner}{}
+	\Variable{current\_user}{}
+	\Variable{access}{}
+	\Variable{read\_object}{}
+	\Variable{write\_object}{}
+	\Variable{delete\_object}{}
+}
+\INVARIANTS{
+	\Invariant{inv1}{false}{$exitsting\_object\subseteq{}DataObject$}{}
+	\Invariant{inv2}{false}{$owner\in{}exitsting\_object\tfun{}Companies$}{}
+	\Invariant{inv3}{false}{$current\_user\in{}Individuals$}{}
+	\Invariant{inv4}{false}{$access\in{}Individuals\rel{}(Operation\cprod{}exitsting\_object)$}{}
+	\Invariant{inv5}{false}{$read\_object\subseteq{}exitsting\_object$}{}
+	\Invariant{inv6}{false}{$read\_object\subseteq{}\{f\qdot{}Read\mapsto{}f\in{}(access[\{current\_user\}])|f\}$}{}
+	\Invariant{inv7}{false}{$write\_object\subseteq{}exitsting\_object$}{}
+	\Invariant{inv8}{true}{$write\_object\subseteq{}\{f\qdot{}Write\mapsto{}f\in{}(access[\{current\_user\}])|f\}$}{}
+	\Invariant{inv9}{false}{$delete\_object\subseteq{}exitsting\_object$}{}
+	\Invariant{inv10}{false}{$delete\_object\subseteq{}\{f\qdot{}Delete\mapsto{}f\in{}(access[\{current\_user\}])|f\}$}{}
+}
+\EVENTS{
+\EVT{readObject}{false}{ordinary}{}{}{
+	\ANY{
+		\Param{obj}{true}{}
+	}
+	\GUARDS{true}{
+		\Guard{grd1}{false}{$obj\in{}exitsting\_object$}{true}{}
+		\Guard{grd2}{false}{$Read\mapsto{}obj\in{}access[\{current\_user\}]$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$read\_object\bcmeq{}read\_object\bunion{}\{obj\}$}{true}{}
+	}
+}
+\EVT{writeObject}{false}{ordinary}{}{}{
+	\ANY{
+		\Param{obj}{true}{}
+	}
+	\GUARDS{true}{
+		\Guard{grd1}{false}{$obj\in{}exitsting\_object$}{true}{}
+		\Guard{grd2}{false}{$Write\mapsto{}obj\in{}access[\{current\_user\}]$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$write\_object\bcmeq{}write\_object\bunion{}\{obj\}$}{true}{}
+	}
+}
+\EVT{deleteObject}{false}{ordinary}{}{}{
+	\ANY{
+		\Param{obj}{true}{}
+	}
+	\GUARDS{true}{
+		\Guard{grd1}{false}{$obj\in{}exitsting\_object$}{true}{}
+		\Guard{grd2}{false}{$Delete\mapsto{}obj\in{}access[\{current\_user\}]$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$exitsting\_object\bcmeq{}exitsting\_object\setminus{}\{obj\}$}{true}{}
+		\Action{act2}{$owner\bcmeq{}owner\setminus{}\{obj\mapsto{}owner(obj)\}$}{true}{}
+		\Action{act3}{$delete\_object\bcmeq{}delete\_object\setminus{}\{obj\}$}{true}{}
+		\Action{act4}{$access\bcmeq{}access\ransub{}(Operation\cprod{}\{obj\})$}{true}{}
+	}
+}
+}
+\END
+\end{document}
